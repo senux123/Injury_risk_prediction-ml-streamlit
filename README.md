@@ -59,15 +59,6 @@ Foe the deployment, the final trained model and the preprocessing artifacts are 
                  |__ feature_columns.pkl        - Ensures the correct order of input columns. 
 
 
-# To run locally
-
-      1) *install dependencies* : 
-
-      2) *Run streamlit* :  streamlit run app.py
-
-      3) Open the link  :  
-
-
 ## How the prediction pipeline works
 - User fills in the values in the streamlit user interface.
 - Inputs are then converted to a single-row dataframe.
