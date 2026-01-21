@@ -49,12 +49,12 @@ Foe the deployment, the final trained model and the preprocessing artifacts are 
 
 ## Project structure ##
 
- -app.py
- -requirements.txt
- -artifacts :
-            -- best_injury_risk_model.pkl - The chosen trained classifier.
-            -- scaler.pkl                 - Standard scaler (fits only on training data)
-            -- feature_columns.pkl        - Ensures the correct order of input columns. 
+ :  -app.py
+    -requirements.txt
+    -artifacts :
+               -- best_injury_risk_model.pkl - The chosen trained classifier.
+               -- scaler.pkl                 - Standard scaler (fits only on training data)
+               -- feature_columns.pkl        - Ensures the correct order of input columns. 
 
 
 ## How the prediction pipeline works
