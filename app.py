@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1DoeM5DdkVfYQy7dhCkmOWcW1aCiILNCK
 """
 
+## IMPORTS ##
+
 import streamlit as st
 import pandas as pd
 import joblib
@@ -68,10 +70,10 @@ if st.button("Predict Injury Risk"):
     pred = int(model.predict(input_scaled)[0])
     prob = float(model.predict_proba(input_scaled)[0, 1])
 
-    label = "High Risk" if pred == 1 else "Low Risk"
+    label = "High risk" if pred == 1 else "Low risk"
 
-    st.success(f"Predicted Risk: {label}")
-    st.write(f"Probability of High Risk: **{prob:.3f}**")
+    st.success(f"Predicted risk: {label}")
+    st.write(f"Probability of high risk: **{prob:.3f}**")
 
 
     st.caption('note: this is model is trained on a tabular clean dataset and is clearly intended as a learning benchmark')
